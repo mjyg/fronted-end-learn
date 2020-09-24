@@ -1,0 +1,25 @@
+{
+  "name": "8.30reactssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:client": "webpack --config build/webpack.client.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-react": "^7.10.4",
+    "@koa/router": "^9.4.0",
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "koa": "^2.13.0",
+    "koa-static": "^5.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

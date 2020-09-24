@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>css 滚动界限点</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        background: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #container {
+        width: 400px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin: auto;
+        scroll-snap-type: x mandatory;
+        /* scroll-snap-stop: always; */
+      }
+      #container img {
+        width: 400px;
+        scroll-snap-align: start;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+        <img src="./assets/1.jpeg"/>
+        <img src="./assets/2.jpeg"/>
+        <img src="./assets/3.jpeg"/>
+        <img src="./assets/4.jpeg"/>
+        <img src="./assets/5.jpeg"/>
+        <img src="./assets/6.jpeg"/>
+        <img src="./assets/7.jpeg"/>
+        <img src="./assets/8.jpeg"/>
+    </div>
+  </body>
+</html>

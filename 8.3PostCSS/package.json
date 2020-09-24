@@ -1,0 +1,21 @@
+{
+  "name": "8.3PostCSS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^4.2.0",
+    "style-loader": "^1.2.1",
+    "styletron": "^3.0.4",
+    "styletron-utils": "^3.0.4",
+    "typed-css-modules-loader": "^0.0.18",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

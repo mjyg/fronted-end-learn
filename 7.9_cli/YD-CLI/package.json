@@ -1,0 +1,21 @@
+{
+  "name": "yd-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "quicktype https://api.github.com/ -o Weather.ts"
+  },
+  "bin": {
+    "ydcli": "./bin/ydcli"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@darkobits/lolcatjs": "^3.1.3",
+    "commander": "^5.1.0",
+    "figlet": "^1.4.0",
+    "quicktype": "^15.0.249",
+    "shelljs": "^0.8.4"
+  }
+}

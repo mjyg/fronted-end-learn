@@ -1,0 +1,8 @@
+:root {
+  --ydColor: yellow;
+}
+.components-list {
+  h3 {
+    color: var(--ydColor);
+  }
+}

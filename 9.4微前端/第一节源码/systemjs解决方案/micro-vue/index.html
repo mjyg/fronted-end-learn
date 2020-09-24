@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H5主站</title>
+    <script src="https://cdn.staticfile.org/vue/2.6.9/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue-router/3.4.3/vue-router.min.js"></script>
+    <script src="https://cdn.staticfile.org/systemjs/6.5.1/system.min.js"></script>
+    <script src="./listener.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!--
+      ① 同步的组件
+      ② 路由写死了 每次  router.json文件 /buylist -》 buylist.xxx66.js
+      ③ webpack恶心 那堆模块化的机制始终没有去掉
+      ④ react引入进来 对react+vue的生命周期进行统一的处理
+    -->
+    <script>
+      Vue.use(VueRouter);
+      const router = new VueRouter({
+        mode: 'history',
+        routes: [
+          {
+            path: '/buylist',
+            name: 'buylist',
+            component: () =>
+              System.import('http://localhost:8080/dist/buylist.js'),
+          },
+        ],
+      });
+      Vue.component('app', {
+        template: `<div class="app">
+        <h2>微前端的部署方案</h2>
+        <hr />
+        <router-link to="/">首页</router-link> |
+        <router-link to="/buylist">购买组件</router-link>
+        <router-view></router-view>
+      </div>`,
+      });
+      new Vue({
+        router,
+        template: '<app/>',
+      }).$mount('#app');
+    </script>
+  </body>
+</html>

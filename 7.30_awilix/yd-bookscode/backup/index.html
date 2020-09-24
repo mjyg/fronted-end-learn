@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京程一灯</title>
+</head>
+
+<body>
+    <div id="app-6">
+        <p>[[data]]</p>
+        <p>{{ message }}</p>
+        <input v-model="message">
+    </div>
+    <input type="button" id="js-btn" value="点我测试" />
+    <script src="/scripts/ydlib.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.6.11/vue.min.js"></script>
+    <script src="/scripts/index.js"></script>
+    <script>
+        (function () {
+            var check = document.createElement('script');
+            if (!('noModule' in check) && 'onbeforeload' in check) {
+                var support = false;
+                document.addEventListener('beforeload', function (e) {
+                    if (e.target === check) {
+                        support = true;
+                    } else if (!e.target.hasAttribute('nomodule') || !support) {
+                        return;
+                    }
+                    e.preventDefault();
+                }, true);
+
+                check.type = 'module';
+                check.src = '.';
+                document.head.appendChild(check);
+                check.remove();
+            }
+        }());
+    </script>
+    <script type="module">
+        import("./scripts/data.js").then((_) => {
+            console.log(_.default)
+        })
+    </script>
+    <script nomodule src="https://cdn.staticfile.org/systemjs/6.3.3/system.js"></script>
+    <script nomodule>
+        // 1.支持module 支持nomodule
+        // 2.支持module 不支持nomodule xx 代码会执行2次
+        // 3.不支持module 不支持nomodule 下面
+        System.import("./scripts/data_bundle.js").then((_) => {
+            console.log(_.default)
+        });
+    </script>
+
+
+</body>
+
+</html>

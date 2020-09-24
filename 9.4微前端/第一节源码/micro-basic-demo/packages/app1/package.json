@@ -1,0 +1,11 @@
+{
+  "name": "app2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/webpack": "^4.41.22",
+    "webpack": "^5.0.0-beta.29",
+    "webpack-cli": "^4.0.0-beta.8"
+  }
+}

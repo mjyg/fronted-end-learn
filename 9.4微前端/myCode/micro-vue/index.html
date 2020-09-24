@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>H5主站</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue-router/3.4.3/vue-router.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/systemjs/6.5.0/system.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      Vue.use(VueRouter);
+      const router = new VueRouter({
+        mode:'history',
+        router:[
+          {
+            path:'buylist',
+            name: 'buylist',
+            component:()=> System.import('http://localhost:8080/dist/buylist.js')
+          }
+        ]
+      });
+      new Vue({
+        router,
+        template: `<div class="app">
+    <h2>微前端部署方案</h2>
+    <hr/>
+    <router-link to="/">首页</router-link>
+    <router-link to="/buylist">购买组件</router-link>
+    <router-view></router-view>
+  </div>`,
+      }).$mount("#app");
+    </script>
+  </body>
+</html>

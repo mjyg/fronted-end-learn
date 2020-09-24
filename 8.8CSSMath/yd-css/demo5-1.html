@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>滤镜混合</title>
+    <style>
+      .night {
+        width: 780px;
+        height: 520px;
+        background: rgba(0, 40, 140, 0.6) url(./assets/house.jpeg);
+        background-size: 100%;
+        background-blend-mode: darken;
+        filter: brightness(80%) grayscale(20%) contrast(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="night"></div>
+  </body>
+</html>

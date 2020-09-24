@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock  %}</title>
+  {% block head %}{% endblock  %}
+</head>
+<body>
+<div>
+  {% block content %}{% endblock  %}
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<sricpt src="https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></sricpt>
+<script>
+  //监听a标签，所有页面监听pjax
+  $(document).pjax('a', '#app'); //会发一个探测后台的请求，加上x-pjax等请求头，识别请求时站内点的，还是通过直接输入url进入的
+</script>
+{% block scripts %}{% endblock  %}
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "name": "yd-react-ssr830",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd dist && nodemon app.js",
+    "build": "npm-run-all --parallel build:*",
+    "build:client": "webpack --config build/webpack.client.js",
+    "build:server": "webpack --config build/webpack.server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.11.4",
+    "@koa/router": "^9.4.0",
+    "@types/koa": "^2.11.4",
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/redux": "^3.6.0",
+    "axios": "^0.20.0",
+    "babel-loader": "^8.1.0",
+    "koa": "^2.13.0",
+    "koa-static": "^5.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/koa__router": "^8.0.2",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "webpack-node-externals": "^2.5.2"
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS shapes</title>
+    <style>
+      body {
+        background: #333;
+        color: #eef;
+        font-family: sans-serif;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      }
+      h1,
+      h2,
+      h3,
+      a {
+        color: white;
+      }
+      ul {
+        list-style: none;
+      }
+
+      #container {
+        width: 1200px;
+        margin: auto;
+        padding: 2em 0;
+        clear: both;
+      }
+      #photo {
+        float: left;
+        width: 100%;
+        border-radius: 10px;
+        shape-outside: polygon(0% 0%, 25% 0, 57% 57%, 52% 100%, 0% 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Using CSS Shapes Module -->
+      <!-- https://drafts.csswg.org/css-shapes/ -->
+      <img id="photo" role="none" src="./assets/kebi.png" />
+
+      <h1>科比</h1>
+      <h2>個人信息</h2>
+      <ul>
+        <li><strong>全名：</strong>科比·布莱恩特</li>
+        <li><strong>出生日</strong>期：1978年8月23日</li>
+        <li><strong>毕业院校</strong>點：劳尔梅里恩高中</li>
+        <li><strong>身高：</strong>1.72米</li>
+        <li><strong>位置：</strong>前锋/前腰</li>
+      </ul>
+      <h2>俱乐部信息</h2>
+      <ul>
+        <li><strong>現在所屬：</strong>西班牙人</li>
+        <li><strong>球衣號碼：</strong>24</li>
+      </ul>
+      <h2>青年隊</h2>
+      <ul>
+        <li><strong>2003–2005：</strong>根宝足球基地</li>
+      </ul>
+      <h2>職業俱乐部 <sup>年份：球隊 - 出场 - (进球)</sup></h2>
+      <ul>
+        <li><strong>2006–2018：</strong>上海上港 - 296 - (151)</li>
+        <li><strong>2019–：</strong>西班牙人 - 7 - (1)</li>
+      </ul>
+      <h2>国家队 <sup>年份：球隊 - 出场 - (进球)</sup></h2>
+      <ul>
+        <li><strong>2007–2008：</strong>中國U-17 - 8 - (7)</li>
+        <li><strong>2009–2010：</strong>中國U-20 - 9 - (11)</li>
+        <li><strong>2010–：</strong>中國 - 63 - (15)</li>
+      </ul>
+    </div>
+  </body>
+</html>

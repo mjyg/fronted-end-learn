@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  </head>
+  <body>
+    <div id="app-6">
+      <!--后端数据-->
+      <p>[[data]]</p>
+
+      <!--前端数据, 客户端渲染-->
+      <p>{{message}}</p>
+      <input v-model="message" />
+    </div>
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/underscore.js/1.10.2/underscore.js"/>-->
+    <!--<sctipt src="/scripts/ydlib.js"/>-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script src="/scripts/index.js"></script>
+
+    <!--浏览器支持module,直接使用ES6，不浪费浏览器对ES6的优化-->
+    <!--script标签上添加一个type="module"的属性来表示这个文件是作为module的方式来运行的。-->
+   <script type='module'>
+     import('./scripts/data.js').then((_)=>{
+       console.log(_.default)
+     })
+   </script>
+
+    <!--浏览器不支持type = module,支持type=nomodule-->
+    <script type='nomodule' src="https://cdn.bootcdn.net/ajax/libs/systemjs/6.3.3/system.js"></script>
+    <script type='nomodule'>
+     //使用模块加载器systemjs来代替Import
+      System.import('./scripts/data_bundle.js').then((_)=>{
+       console.log(_.default)
+     })
+    </script>
+
+    <!--下面这样写更好，防止浏览器不支持type=nomodule-->
+    <!--不支持module script的浏览器，会忽略未知的type="module"的script，同时也会忽略传统script中不认识的nomodule属性，进而执行传统的bundle.js代码-->
+    <script nomodule src="https://cdn.bootcdn.net/ajax/libs/systemjs/6.3.3/system.js"></script>
+    <script nomodule>
+     //使用模块加载器systemjs来代替Import
+      System.import('./scripts/data_bundle.js').then((_)=>{
+       console.log(_.default)
+     })
+    </script>
+    <!--但是支持type="module"的浏览器，不认识nomodule属性，data.js会执行两遍-->
+  </body>
+</html>

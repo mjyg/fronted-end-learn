@@ -1,0 +1,30 @@
+[2020-07-18T22:44:15.987] [ERROR] cheese - Error: ENOENT: no such file or directory, open '/Users/yuanzhijia/Desktop/yd-bookscode/dist/views/layouts/layout.html'
+    at Object.openSync (fs.js:458:3)
+    at Object.readFileSync (fs.js:360:35)
+    at Object.ret.load (/Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/loaders/filesystem.js:59:15)
+    at exports.Swig.parseFile (/Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/swig.js:403:31)
+    at getParents (/Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/swig.js:480:14)
+    at exports.Swig.precompile (/Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/swig.js:527:19)
+    at exports.Swig.compile (/Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/swig.js:651:16)
+    at /Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/swig.js:729:27
+    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:63:3) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/yuanzhijia/Desktop/yd-bookscode/dist/views/layouts/layout.html'
+}
+[2020-07-18T22:53:59.722] [ERROR] cheese - Error: ENOENT: no such file or directory, open '/Users/yuanzhijia/Desktop/yd-bookscode/dist/components/banner/banner.html'
+    at Object.openSync (fs.js:458:3)
+    at Object.readFileSync (fs.js:360:35)
+    at Object.ret.load (/Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/loaders/filesystem.js:59:15)
+    at exports.Swig.compileFile (/Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/swig.js:740:31)
+    at Object.eval [as tpl] (eval at precompile (/Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/swig.js:537:13), <anonymous>:9:18)
+    at compiled (/Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/swig.js:664:18)
+    at /Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/swig.js:604:20
+    at /Users/yuanzhijia/Desktop/yd-bookscode/node_modules/swig-templates/lib/swig.js:735:9
+    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:63:3) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/yuanzhijia/Desktop/yd-bookscode/dist/components/banner/banner.html'
+}

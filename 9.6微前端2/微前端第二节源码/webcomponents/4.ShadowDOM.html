@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shadow DOM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="test"></div>
+    <script>
+        const div = document.getElementById('test')
+        const shadowRoot = div.createShadowRoot()
+        const span = document.createElement('span')
+        span.textContent = 'hello world'
+        shadowRoot.appendChild(span)
+    </script>
+</body>
+
+</html>

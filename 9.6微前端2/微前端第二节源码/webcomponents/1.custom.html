@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    1.Custom Elements 2.HTML Imports 3.HTML Templates 4.Shadow DOM
+    <hr />
+    <script>
+      class ButtonHelloElement extends HTMLButtonElement {
+        constructor() {
+          super();
+          this.addEventListener('click', () => {
+            alert('hello world');
+          });
+        }
+      }
+      customElements.define('button-hello', ButtonHelloElement, {
+        extends: 'button',
+      });
+    </script>
+    <button is="button-hello">测试</button> 3
+    <!--     <script>
+       var XProductProto = Object.create(HTMLElement.prototype);
+       XProductProto.createdCallback = function() {
+            this.addEventListener('click', () => {
+                alert('hello world')
+            })
+       } 
+       var XProduct = document.registerElement('x-product', {
+            prototype: XProductProto
+        });
+    </script>
+    <x-product>测试</x-product> -->
+  </body>
+</html>

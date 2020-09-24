@@ -1,0 +1,31 @@
+{
+  "name": "7.2_nodejs",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">     <a href=\"https://github.com/yiisoft\" target=\"_blank\">         <img src=\"https://avatars0.githubusercontent.com/u/993323\" height=\"100px\">     </a>     <h1 align=\"center\">Yii 2 Basic Project Template</h1>     <br> </p>",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development supervisor app.js",
+    "build": "babel ./assets/scripts/data.js -o ./assets/scripts/data_bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "koa": "^2.13.0",
+    "koa-simple-router": "^0.2.0",
+    "koa-static": "^5.0.0",
+    "koa-swig": "^2.2.1",
+    "koa2-connect-history-api-fallback": "^0.1.2",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-modules-systemjs": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "cross-env": "^7.0.2"
+  }
+}

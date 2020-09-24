@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Houdini绘制星空</title>
+    <style>
+      body {
+        margin: 0;
+        color: #fff;
+        font-size: 24px;
+        background: #000;
+      }
+      body::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        --star-density: 0.8;
+        --star-opacity: 1;
+        background-image: paint(yd-sky);
+        animation: shine 1s linear alternate infinite;
+      }
+      @keyframes shine {
+        from {
+          --star-opacity: 1;
+        }
+        to {
+          --star-opacity: 0.4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      if (!CSS in window || !CSS.paintWorklet) {
+        console.log('不支持paintWorklet');
+      } else {
+        CSS.paintWorklet.addModule('./sky.js');
+      }
+    </script>
+  </body>
+</html>

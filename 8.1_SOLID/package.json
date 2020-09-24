@@ -1,0 +1,22 @@
+{
+  "name": "8.1_solid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inversify": "^5.0.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@node-ts/bus-messages": "^0.3.0",
+    "@node-ts/ddd": "^0.1.5",
+    "@node-ts/ddd-types": "^0.1.3",
+    "@types/koa-router": "^7.4.1",
+    "koa-router": "^9.1.0"
+  }
+}

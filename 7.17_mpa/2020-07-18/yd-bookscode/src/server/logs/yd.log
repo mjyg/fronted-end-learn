@@ -1,0 +1,6 @@
+[2020-07-04T22:44:55.050] [ERROR] cheese - ReferenceError: ctx is not defined
+    at actionCreate (/Users/yuanzhijia/Desktop/yd-bookscode/controllers/ApiController.js:18:5)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /Users/yuanzhijia/Desktop/yd-bookscode/middlewares/errorHandler.js:12:7
+    at async /Users/yuanzhijia/Desktop/yd-bookscode/middlewares/errorHandler.js:5:9
+    at async serve (/Users/yuanzhijia/Desktop/yd-bookscode/node_modules/koa-static/index.js:53:9)

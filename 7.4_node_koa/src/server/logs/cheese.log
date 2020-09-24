@@ -1,0 +1,55 @@
+[2020-07-07T09:21:10.570] [ERROR] cheese - ReferenceError: xx is not defined
+    at actionIndex (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\controllers\ApiController.js:6:24)
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:186:18)
+    at Router._lookup (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:198:12)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:138:21
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\middlewares\errorHandler.js:13:13
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\middlewares\errorHandler.js:5:15
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at serve (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-static@5.0.0@koa-static\index.js:53:15)
+[2020-07-07T09:36:03.511] [ERROR] cheese - ReferenceError: ctx is not defined
+    at actionCreate (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\controllers\ApiController.js:9:9)
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:186:18)
+    at Router._lookup (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:198:12)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:138:21
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\middlewares\errorHandler.js:13:13
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\middlewares\errorHandler.js:5:15
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa2-connect-history-api-fallback@0.1.2@koa2-connect-history-api-fallback\dist\index.js:97:42
+[2020-07-07T09:36:05.402] [ERROR] cheese - ReferenceError: ctx is not defined
+    at actionCreate (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\controllers\ApiController.js:9:9)
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:186:18)
+    at Router._lookup (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:198:12)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:138:21
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\middlewares\errorHandler.js:13:13
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\middlewares\errorHandler.js:5:15
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa2-connect-history-api-fallback@0.1.2@koa2-connect-history-api-fallback\dist\index.js:97:42
+[2020-07-07T09:36:50.723] [ERROR] cheese - ReferenceError: ctx is not defined
+    at actionCreate (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\controllers\ApiController.js:9:9)
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:186:18)
+    at Router._lookup (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:198:12)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:138:21
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\middlewares\errorHandler.js:13:13
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\middlewares\errorHandler.js:5:15
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa2-connect-history-api-fallback@0.1.2@koa2-connect-history-api-fallback\dist\index.js:97:42
+[2020-07-07T09:36:51.525] [ERROR] cheese - ReferenceError: ctx is not defined
+    at actionCreate (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\controllers\ApiController.js:9:9)
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:186:18)
+    at Router._lookup (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:198:12)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:138:21
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\middlewares\errorHandler.js:13:13
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\middlewares\errorHandler.js:5:15
+    at dispatch (D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at D:\zyj\lesson\7.2_Nodejs\7.2_Nodejs\node_modules\_koa2-connect-history-api-fallback@0.1.2@koa2-connect-history-api-fallback\dist\index.js:97:42

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web components</title>
+    <!-- import css files -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+
+    <!-- datetime component -->
+    <date-time></date-time>
+
+
+    <!-- article card list component -->
+    <div class="container-page">
+        <div class="container-shadow-panel"></div>
+        <section class="container">
+            <!-- article list -->
+            <!-- <article-info
+                id="1"
+                cover="https://cdn.pixabay.com/photo/2015/01/28/23/35/landscape-615429__480.jpg"
+                theme="autumn"
+                avatar="http://b-ssl.duitang.com/uploads/item/201505/19/20150519164024_mdRTY.jpeg"
+                author="Damiao Classroom"
+                title="In my dual profession as an educator and health care provider"
+            >
+                <em slot="comments">8000+</em>
+                <em slot="likes">500+</em>
+                <em slot="shares">188+</em>
+            </article-info> -->
+        </section>
+    </div>
+
+    <!-- article detail component -->
+    <div class="container-detail-wrap">
+
+        <!-- article detail page  -->
+        <article-info-detail
+            id="1"
+            cover="https://cdn.pixabay.com/photo/2015/01/28/23/35/landscape-615429__480.jpg"
+            theme="autumn"
+            avatar="http://b-ssl.duitang.com/uploads/item/201505/19/20150519164024_mdRTY.jpeg"
+            author="Damiao Classroom"
+            title="In my dual profession as an educator and health care provider"
+            comments="8000+"
+            likes="500+"
+            shares="188+"
+            paragraph=" There is a wolf. He is very hungry and has no strength to find food. As he lies under a large tree, a dog sees him. The dog sees the wolf is so thin and hungry, and he feels sorry for him and says, “You are so terrible! Are you hungry?”
+
+            “Yes,” says the wolf, “I’m hungry because you are guarding the sheep. Now I am so weak that I can’t find food. I think I will do.”
+    
+            “Why not help me?” Asks the dog, “I work regularly and I eat regularly. You could do the same. You can help me guard the sleep. In that way, I will not worry about your stealing the sleep, and you will not worry about going hungry. It’s good for us."
+        ></article-info-detail>
+
+    </div>
+
+    
+    <!-- import script files -->
+
+    <script src="./scripts/article-data.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/date-time.js"></script>
+    <script src="./scripts/article-info.js"></script>
+    <script src="./scripts/article-info-detail.js"></script>
+</body>
+</html>
